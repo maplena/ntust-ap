@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_style3"
+        android:foreground="@drawable/go_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/OtherPersonalImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/imageview_style2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/PersonalStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="#00000000"
+        android:text="B10809029 / 薄鹽"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintStart_toEndOf="@+id/OtherPersonalImageView"
+        app:layout_constraintTop_toTopOf="@+id/OtherPersonalImageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_style2"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/OtherPersonalImageView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/PersonalStudentId"
+        app:layout_constraintTop_toBottomOf="@id/PersonalStudentId">
+
+        <TextView
+            android:id="@+id/f4211tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#台科"
+            android:textColor="#0000FF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/surveyDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#資管"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/OtherPersonalTag3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#學士"
+            android:textColor="#909090"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/f521surveypeoplelimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#男"
+            android:textColor="#FF0000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText22"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/OtherPersonalImageView"
+        app:layout_constraintTop_toBottomOf="@+id/OtherPersonalImageView" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/OtherPersonalToLottery"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/OtherPersonalToQuestion"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/OtherPersonalToQuestion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/OtherPersonalToMain"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/OtherPersonalToLottery"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/OtherPersonalToMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/textView"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/OtherPersonalToEvent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/OtherPersonalToQuestion"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/OtherPersonalToEvent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/OtherPersonalToPersonal"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/OtherPersonalToMain"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/OtherPersonalToPersonal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/OtherPersonalToEvent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首頁"
+            android:textColor="#FF5C00"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/OtherPersonalToMain"
+            app:layout_constraintStart_toStartOf="@+id/OtherPersonalToMain"
+            app:layout_constraintTop_toBottomOf="@id/OtherPersonalToMain" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E9E9E9"
+        android:hint="發送訊息"
+        android:padding="10dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/OtherPersonalImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

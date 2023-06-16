@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/f1_1">
+
+    <fragment
+        android:id="@+id/f1_1"
+        android:name="com.example.figma.f1_1"
+        android:label="f1_1"
+        tools:layout="@layout/f1_1">
+        <action
+            android:id="@+id/action_f1_1_to_f1_1_1"
+            app:destination="@id/f1_1_1" />
+        <action
+            android:id="@+id/action_f1_1_to_f1_1_3"
+            app:destination="@id/f1_1_3" />
+        <action
+            android:id="@+id/action_f1_1_to_f1_1_4"
+            app:destination="@id/f1_1_4" />
+        <action
+            android:id="@+id/action_f1_1_to_f1_2"
+            app:destination="@id/f1_2" />
+        <action
+            android:id="@+id/action_f1_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/f1_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f1_1_2"
+        android:name="com.example.figma.f1_1_2"
+        android:label="f1_1_2"
+        tools:layout="@layout/f1_1_2"/>
+    <fragment
+        android:id="@+id/f1_1_3"
+        android:name="com.example.figma.f1_1_3"
+        android:label="f1_1_3"
+        tools:layout="@layout/f1_1_3" />
+    <fragment
+        android:id="@+id/f1_1_4"
+        android:name="com.example.figma.f1_1_4"
+        android:label="f1_1_4"
+        tools:layout="@layout/f1_1_4"/>
+    <fragment
+        android:id="@+id/f1_1_1"
+        android:name="com.example.figma.f1_1_1"
+        android:label="f1_1_1"
+        tools:layout="@layout/f1_1_1">
+        <action
+            android:id="@+id/action_f1_1_1_to_f1_1_2"
+            app:destination="@id/f1_1_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f1_2"
+        android:name="com.example.figma.f1_2"
+        android:label="f1_2"
+        tools:layout="@layout/f1_2">
+        <action
+            android:id="@+id/action_f1_2_to_f1_1_2"
+            app:destination="@id/f1_1_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f2_1"
+        android:name="com.example.figma.f2_1"
+        android:label="f2_1"
+        tools:layout="@layout/f2_1">
+        <action
+            android:id="@+id/action_f2_1_to_f3_1"
+            app:destination="@id/f3_1" />
+        <action
+            android:id="@+id/action_f2_1_to_f4_1"
+            app:destination="@id/f4_1" />
+        <action
+            android:id="@+id/action_f2_1_to_f5_1"
+            app:destination="@id/f5_1" />
+        <action
+            android:id="@+id/action_f2_1_to_f6_1"
+            app:destination="@id/f6_1" />
+        <action
+            android:id="@+id/action_f2_1_to_f9"
+            app:destination="@id/f9" />
+        <action
+            android:id="@+id/action_f2_1_to_f8"
+            app:destination="@id/f8" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/f3_1"
+        android:name="com.example.figma.f3_1"
+        android:label="f3_1"
+        tools:layout="@layout/f3_1">
+        <action
+            android:id="@+id/action_f3_1_to_f3_1_1"
+            app:destination="@id/f3_1_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f2_1"
+            app:popUpTo="@id/f3_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f3_1_to_f3_3"
+            app:destination="@id/f3_3" />
+        <action
+            android:id="@+id/action_f3_1_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f8"
+            app:destination="@id/f8"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f1_1"
+            app:destination="@id/f1_1" />
+        <action
+            android:id="@+id/action_f3_1_to_f7"
+            app:destination="@id/f7"
+            app:popUpTo="@id/f2_1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/f3_1_1"
+        android:name="com.example.figma.f3_1_1"
+        android:label="f3_1_1"
+        tools:layout="@layout/f3_1_1">
+        <action
+            android:id="@+id/action_f3_1_1_to_f7"
+            app:destination="@id/f7"
+            app:popUpTo="@id/f3_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f3_1_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f3_1_1_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f3_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f3_1_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f3_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f3_1_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/f3_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/f3_3"
+        android:name="com.example.figma.f3_3"
+        android:label="f3_3"
+        tools:layout="@layout/f3_3">
+        <action
+            android:id="@+id/action_f3_3_to_f3_1"
+            app:popUpTo="@id/f3_1" />
+        <action
+            android:id="@+id/action_f3_3_to_f3_3_1"
+            app:destination="@id/f3_3_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f3_3_1"
+        android:name="com.example.figma.f3_3_1"
+        android:label="f3_3_1"
+        tools:layout="@layout/f3_3_1">
+        <action
+            android:id="@+id/action_f3_3_1_to_f3_3"
+            app:popUpTo="@id/f3_3" />
+        <action
+            android:id="@+id/action_f3_3_1_to_f3_3_1_1"
+            app:destination="@id/f3_3_1_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f3_3_1_1"
+        android:name="com.example.figma.f3_3_1_1"
+        android:label="f3_3_1_1"
+        tools:layout="@layout/f3_3_1_1">
+        <action
+            android:id="@+id/action_f3_3_1_1_to_f3_3_1"
+            app:popUpTo="@id/f3_3_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_1"
+        android:name="com.example.figma.f4_1"
+        android:label="f4_1"
+        tools:layout="@layout/f4_1" >
+        <action
+            android:id="@+id/action_f4_1_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f4_1_to_f2_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_to_f4_1_1"
+            app:destination="@id/f4_1_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_f4_1_to_f4_2_1"
+            app:destination="@id/f4_2_1"
+            app:popUpTo="@id/f4_1" />
+        <action
+            android:id="@+id/action_f4_1_to_f4_2_3"
+            app:destination="@id/f4_2_3"
+            app:popUpTo="@id/f3_1"/>
+        <action
+            android:id="@+id/action_f4_1_to_f4_5"
+            app:destination="@id/f4_5" />
+        <action
+            android:id="@+id/action_f4_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f4_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f4_1_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f2_1" />
+        <action
+            android:id="@+id/action_f4_1_to_f8"
+            app:destination="@id/f8"
+            app:popUpTo="@id/f2_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_1_1"
+        android:name="com.example.figma.f4_1_1"
+        android:label="f4_1_1"
+        tools:layout="@layout/f4_1_1">
+        <action
+            android:id="@+id/action_f4_1_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f4_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f4_2_1"
+            app:destination="@id/f4_2_1"
+            app:popUpTo="@id/f4_1" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f4_5"
+            app:destination="@id/f4_5" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f4_4_3"
+            app:destination="@id/f4_4_3" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f4_1_2_1"
+            app:destination="@id/f4_1_2_1" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_1_1_to_f8"
+            app:destination="@id/f8"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_1"
+        android:name="com.example.figma.f4_2_1"
+        android:label="f4_2_1"
+        tools:layout="@layout/f4_2_1">
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_1_1"
+            app:destination="@id/f4_1_1"
+            app:popUpTo="@id/f4_1" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_2_3"
+            app:destination="@id/f4_2_3" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_5"
+            app:destination="@id/f4_5" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_2_1_1"
+            app:destination="@id/f4_2_1_1" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_2_2"
+            app:destination="@id/f4_2_2" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_3_1_1"
+            app:destination="@id/f4_3_1_1" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f4_3_1_2"
+            app:destination="@id/f4_3_1_2" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f4_2_1_to_f8"
+            app:destination="@id/f8"
+            app:popUpTo="@id/f4_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_3"
+        android:name="com.example.figma.f4_2_3"
+        android:label="f4_2_3"
+        tools:layout="@layout/f4_2_3">
+        <action
+            android:id="@+id/action_f4_2_3_to_f4_2_1"
+            app:destination="@id/f4_2_1"
+            app:popUpTo="@id/f4_2_1"/>
+    </fragment>
+    <fragment
+        android:id="@+id/f4_5"
+        android:name="com.example.figma.f4_5"
+        android:label="f4_5"
+        tools:layout="@layout/f4_5">
+        <action
+            android:id="@+id/action_f4_5_to_f4_4_1"
+            app:destination="@id/f4_4_1" />
+        <action
+            android:id="@+id/action_f4_5_to_f4_5_1"
+            app:destination="@id/f4_5_1" />
+        <action
+            android:id="@+id/action_f4_5_to_f4_4_3"
+            app:destination="@id/f4_4_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_4_1"
+        android:name="com.example.figma.f4_4_1"
+        android:label="f4_4_1"
+        tools:layout="@layout/f4_4_1">
+        <action
+            android:id="@+id/action_f4_4_1_to_f4_1_1"
+            app:destination="@id/f4_1_1" />
+        <action
+            android:id="@+id/action_f4_4_1_to_f4_5"
+            app:popUpTo="@id/f4_5" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_1_1"
+        android:name="com.example.figma.f4_2_1_1"
+        android:label="f4_2_1_1"
+        tools:layout="@layout/f4_2_1_1">
+        <action
+            android:id="@+id/action_f4_2_1_1_to_f4_2_1"
+            app:popUpTo="@id/f4_2_1" />
+        <action
+            android:id="@+id/action_f4_2_1_1_to_f4_2_2_d3"
+            app:destination="@id/f4_2_2_d3" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_2"
+        android:name="com.example.figma.f4_2_2"
+        android:label="f4_2_2"
+        tools:layout="@layout/f4_2_2">
+        <action
+            android:id="@+id/action_f4_2_2_to_f4_2_1"
+            app:popUpTo="@id/f4_2_1" />
+        <action
+            android:id="@+id/action_f4_2_2_to_f4_2_2_d2"
+            app:destination="@id/f4_2_2_d2" />
+        <action
+            android:id="@+id/action_f4_2_2_to_f7"
+            app:destination="@id/f7" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_2_d2"
+        android:name="com.example.figma.f4_2_2_d2"
+        android:label="f4_2_2_d2"
+        tools:layout="@layout/f4_2_2_d2">
+        <action
+            android:id="@+id/action_f4_2_2_d2_to_f4_2_2_d3"
+            app:popUpTo="@id/f4_2_2_d3" />
+        <action
+            android:id="@+id/action_f4_2_2_d2_to_f4_2_2"
+            app:popUpTo="@id/f4_2_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_2_2_d3"
+        android:name="com.example.figma.f4_2_2_d3"
+        android:label="f4_2_2_d3"
+        tools:layout="@layout/f4_2_2_d3">
+        <action
+            android:id="@+id/action_f4_2_2_d3_to_f4_2_2"
+            app:destination="@id/f4_2_2"
+            app:popUpTo="@id/f4_2_2" />
+        <action
+            android:id="@+id/action_f4_2_2_d3_to_f4_2_1"
+            app:destination="@id/f4_2_1"
+            app:popUpTo="@id/f4_2_1" />
+        <action
+            android:id="@+id/action_f4_2_2_d3_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f6_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_5_1"
+        android:name="com.example.figma.f4_5_1"
+        android:label="f4_5_1"
+        tools:layout="@layout/f4_5_1">
+        <action
+            android:id="@+id/action_f4_5_1_to_f4_5"
+            app:popUpTo="@id/f4_5" />
+        <action
+            android:id="@+id/action_f4_5_1_to_f7"
+            app:destination="@id/f7" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_4_3"
+        android:name="com.example.figma.f4_4_3"
+        android:label="f4_4_3"
+        tools:layout="@layout/f4_4_3">
+        <action
+            android:id="@+id/action_f4_4_3_to_f4_1_1"
+            app:popUpTo="@id/f4_1_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_3_1_1"
+        android:name="com.example.figma.f4_3_1_1"
+        android:label="f4_3_1_1"
+        tools:layout="@layout/f4_3_1_1">
+        <action
+            android:id="@+id/action_f4_3_1_1_to_f4_2_1"
+            app:popUpTo="@id/f4_2_1" />
+        <action
+            android:id="@+id/action_f4_3_1_1_to_f7"
+            app:destination="@id/f7" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_3_1_2"
+        android:name="com.example.figma.f4_3_1_2"
+        android:label="f4_3_1_2"
+        tools:layout="@layout/f4_3_1_2">
+        <action
+            android:id="@+id/action_f4_3_1_2_to_f4_2_1"
+            app:popUpTo="@id/f4_2_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f4_1_2_1"
+        android:name="com.example.figma.f4_1_2_1"
+        android:label="f4_1_2_1"
+        tools:layout="@layout/f4_1_2_1">
+        <action
+            android:id="@+id/action_f4_1_2_1_to_f4_1_1"
+            app:popUpTo="@id/f4_1_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_1"
+        android:name="com.example.figma.f5_1"
+        android:label="f5_1"
+        tools:layout="@layout/f5_1">
+        <action
+            android:id="@+id/action_f5_1_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_1_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f5_1_to_f5_2"
+            app:destination="@id/f5_2"
+            app:popUpTo="@id/f5_1" />
+        <action
+            android:id="@+id/action_f5_1_to_f5_2_1"
+            app:destination="@id/f5_2_1" />
+        <action
+            android:id="@+id/action_f5_1_to_f5_1_1"
+            app:destination="@id/f5_1_1" />
+        <action
+            android:id="@+id/action_f5_1_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_1_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_1_to_f8"
+            app:destination="@id/f8"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_2"
+        android:name="com.example.figma.f5_2"
+        android:label="f5_2"
+        tools:layout="@layout/f5_2">
+        <action
+            android:id="@+id/action_f5_2_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f5_2_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_2_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_2_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_2_to_f5_2_1"
+            app:destination="@id/f5_2_1" />
+        <action
+            android:id="@+id/action_f5_2_to_f5_2_3"
+            app:destination="@id/f5_2_3" />
+        <action
+            android:id="@+id/action_f5_2_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_2_to_f9"
+            app:destination="@id/f9"
+            app:popUpTo="@id/f5_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f5_2_to_f5_2_1_1"
+            app:destination="@id/f5_2_1_1" />
+        <action
+            android:id="@+id/action_f5_2_to_f5_2_5"
+            app:destination="@id/f5_2_5" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_2_1"
+        android:name="com.example.figma.f5_2_1"
+        android:label="f5_2_1"
+        tools:layout="@layout/f5_2_1">
+        <action
+            android:id="@+id/action_f5_2_1_to_f5_2"
+            app:destination="@id/f5_2" />
+        <action
+            android:id="@+id/action_f5_2_1_to_f5_1_2"
+            app:destination="@id/f5_1_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_1_1"
+        android:name="com.example.figma.f5_1_1"
+        android:label="f5_1_1"
+        tools:layout="@layout/f5_1_1">
+        <action
+            android:id="@+id/action_f5_1_1_to_f5_1"
+            app:popUpTo="@id/f5_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_1_2"
+        android:name="com.example.figma.f5_1_2"
+        android:label="f5_1_2"
+        tools:layout="@layout/f5_1_2">
+        <action
+            android:id="@+id/action_f5_1_2_to_f5_2_1"
+            app:destination="@id/f5_2_1" />
+        <action
+            android:id="@+id/action_f5_1_2_to_f5_2"
+            app:destination="@id/f5_2" />
+        <action
+            android:id="@+id/action_f5_1_2_to_f5_2_3"
+            app:destination="@id/f5_2_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_2_3"
+        android:name="com.example.figma.f5_2_3"
+        android:label="f5_2_3"
+        tools:layout="@layout/f5_2_3">
+        <action
+            android:id="@+id/action_f5_2_3_to_f5_1_2"
+            app:destination="@id/f5_1_2" />
+        <action
+            android:id="@+id/action_f5_2_3_to_f5_2"
+            app:destination="@id/f5_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f6_1"
+        android:name="com.example.figma.f6_1"
+        android:label="f6_1"
+        tools:layout="@layout/f6_1">
+        <action
+            android:id="@+id/action_f6_1_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f6_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f6_1_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f6_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f6_1_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f6_1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f6_1_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f6_1_to_f4_2_2_d3"
+            app:destination="@id/f4_2_2_d3"
+            app:popUpTo="@id/f6_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/f7"
+        android:name="com.example.figma.f7"
+        android:label="f7"
+        tools:layout="@layout/f7">
+        <action
+            android:id="@+id/action_f7_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f7"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f7_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f7"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f7_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f7"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f7_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f7"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f7_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/f9"
+        android:name="com.example.figma.f9"
+        android:label="f9"
+        tools:layout="@layout/f9">
+        <action
+            android:id="@+id/action_f9_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f9"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f9_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f9"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f9_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f9"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f9_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f9_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f9"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f8"
+        android:name="com.example.figma.f8"
+        android:label="f8"
+        tools:layout="@layout/f8">
+        <action
+            android:id="@+id/action_f8_to_f2_1"
+            app:destination="@id/f2_1"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_f8_to_f5_1"
+            app:destination="@id/f5_1"
+            app:popUpTo="@id/f8"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f8_to_f4_1"
+            app:destination="@id/f4_1"
+            app:popUpTo="@id/f8"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f8_to_f3_1"
+            app:destination="@id/f3_1"
+            app:popUpTo="@id/f8"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f8_to_f6_1"
+            app:destination="@id/f6_1"
+            app:popUpTo="@id/f8"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_f8_to_f8_1"
+            app:destination="@id/f8_1"
+            app:popUpTo="@id/f8"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/f8_1"
+        android:name="com.example.figma.f8_1"
+        android:label="f8_1"
+        tools:layout="@layout/f8_1">
+        <action
+            android:id="@+id/action_f8_1_to_f8"
+            app:destination="@id/f8" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_2_1_1"
+        android:name="com.example.figma.f5_2_1_1"
+        android:label="f5_2_1_1"
+        tools:layout="@layout/f5_2_1_1">
+        <action
+            android:id="@+id/action_f5_2_1_1_to_f5_2"
+            app:destination="@id/f5_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f5_2_5"
+        android:name="com.example.figma.f5_2_5"
+        android:label="f5_2_5"
+        tools:layout="@layout/f5_2_5">
+        <action
+            android:id="@+id/action_f5_2_5_to_f5_2"
+            app:destination="@id/f5_2" />
+    </fragment>
+</navigation>

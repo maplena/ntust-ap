@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/EventListImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EventDetailNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="台科貓貓募資救援"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EventListImageView" />
+
+    <TextView
+        android:id="@+id/EventDetailTag1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#吸貓"
+        android:textColor="#662BE2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/EventDetailNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/EventDetailNameTextView" />
+
+    <TextView
+        android:id="@+id/EventDetailTag2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#台科"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/EventDetailTag1TextView"
+        app:layout_constraintTop_toBottomOf="@id/EventDetailNameTextView" />
+
+    <TextView
+        android:id="@+id/EventDetailCreatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="社團：台科根與芽"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/EventDetailTag1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/EventDetailTag1TextView" />
+
+    <TextView
+        android:id="@+id/EventDetailDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="時間：8/8"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/EventDetailTag1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/EventDetailCreatorTextView" />
+
+    <TextView
+        android:id="@+id/EventDetailPositionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="地點：台灣科技大學"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/EventDetailTag1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/EventDetailDateTextView" />
+
+
+    <TextView
+        android:id="@+id/EventDetailPeopleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="參與人數：12/20"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EventDetailNameTextView" />
+
+    <Button
+        android:id="@+id/EventPeopleListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style1"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="人員列表"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/EventDetailPeopleTextView"
+        app:layout_constraintStart_toStartOf="@+id/EventDetailNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <Button
+        android:id="@+id/F45CancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style1"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="取消報名"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/EventDetailPeopleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <Button
+        android:id="@+id/F45SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style1"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="立即報名"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/EventDetailPeopleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="（附件資訊）"
+        android:textColor="#662BE2"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EventDetailPositionTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

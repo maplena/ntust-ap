@@ -1,0 +1,208 @@
+<mxfile host="app.diagrams.net" modified="2021-09-27T07:12:34.494Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="Aa2XN2JPFAmlWzJvgwv4" version="15.2.9" type="github">
+  <diagram id="-rMA7F80I8sDXmWd3VqH" name="Page-1">
+    <mxGraphModel dx="981" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-T2Orch8R2g9dwo5IgvV-97" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="454" y="714" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-97" value="&lt;font style=&quot;font-size: 24px&quot;&gt;程式&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="404" y="114" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="-T2Orch8R2g9dwo5IgvV-99" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="103" y="714" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-99" value="&lt;font style=&quot;font-size: 24px&quot;&gt;使用者&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="54" y="114" width="96.88" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-T2Orch8R2g9dwo5IgvV-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="804" y="714" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-101" value="&lt;font style=&quot;font-size: 24px&quot;&gt;伺服器&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="754" y="114" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-102" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="454" y="304" as="sourcePoint" />
+            <mxPoint x="804" y="304" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-103" value="&lt;font style=&quot;font-size: 24px&quot;&gt;發出驗證碼請求&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-102" vertex="1" connectable="0">
+          <mxGeometry x="0.5575" relative="1" as="geometry">
+            <mxPoint x="-82" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-104" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="104" y="244" as="sourcePoint" />
+            <mxPoint x="454" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-105" value="&lt;font style=&quot;font-size: 24px&quot;&gt;輸入個資&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-104" vertex="1" connectable="0">
+          <mxGeometry x="-0.4997" y="-6" relative="1" as="geometry">
+            <mxPoint x="82" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-106" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="104" y="385" as="sourcePoint" />
+            <mxPoint x="454" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-107" value="&lt;font style=&quot;font-size: 24px&quot;&gt;輸入驗證碼&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-106" vertex="1" connectable="0">
+          <mxGeometry x="-0.4997" y="-6" relative="1" as="geometry">
+            <mxPoint x="82" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-108" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="454" y="428.91999999999996" as="sourcePoint" />
+            <mxPoint x="804" y="428.91999999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-109" value="&lt;font style=&quot;font-size: 24px&quot;&gt;驗證驗證碼&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-108" vertex="1" connectable="0">
+          <mxGeometry x="-0.4997" y="-6" relative="1" as="geometry">
+            <mxPoint x="92" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-110" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="804" y="502.66999999999996" as="sourcePoint" />
+            <mxPoint x="454" y="502.66999999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-111" value="&lt;span style=&quot;font-size: 24px&quot;&gt;認證成功&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-110" vertex="1" connectable="0">
+          <mxGeometry x="0.1562" y="1" relative="1" as="geometry">
+            <mxPoint x="92" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-112" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="454" y="523" as="sourcePoint" />
+            <mxPoint x="104" y="523" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-113" value="&lt;span style=&quot;font-size: 24px&quot;&gt;顯示認證成功&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-112" vertex="1" connectable="0">
+          <mxGeometry x="0.1562" y="1" relative="1" as="geometry">
+            <mxPoint x="17" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-T2Orch8R2g9dwo5IgvV-115" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1064" y="714" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1064" y="644" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-115" value="&lt;font style=&quot;font-size: 24px&quot;&gt;信箱&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1014" y="114" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-116" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="804" y="324" as="sourcePoint" />
+            <mxPoint x="1064" y="324" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-117" value="&lt;font style=&quot;font-size: 24px&quot;&gt;寄送驗證碼&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-116" vertex="1" connectable="0">
+          <mxGeometry x="0.1562" y="1" relative="1" as="geometry">
+            <mxPoint x="-11" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-206" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="804" y="614.0000000000001" as="sourcePoint" />
+            <mxPoint x="454" y="614.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-207" value="&lt;span style=&quot;font-size: 24px&quot;&gt;認證失敗&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-206" vertex="1" connectable="0">
+          <mxGeometry x="0.1562" y="1" relative="1" as="geometry">
+            <mxPoint x="92" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-208" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="454" y="633" as="sourcePoint" />
+            <mxPoint x="104" y="633" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-T2Orch8R2g9dwo5IgvV-209" value="&lt;span style=&quot;font-size: 24px&quot;&gt;認證失敗&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-T2Orch8R2g9dwo5IgvV-208" vertex="1" connectable="0">
+          <mxGeometry x="0.1562" y="1" relative="1" as="geometry">
+            <mxPoint x="22" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--1" value="學號 (str)、性別 (int)、&lt;br&gt;密碼 (str)、確認密碼 (str)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="199" y="174" width="150" height="33.75" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--3" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="104" y="284" as="sourcePoint" />
+            <mxPoint x="454" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--4" value="&lt;span style=&quot;font-size: 24px&quot;&gt;點擊註冊&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bo3QOvbhh4VpvO5wiQN--3">
+          <mxGeometry x="-0.4997" y="-6" relative="1" as="geometry">
+            <mxPoint x="82" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--5" value="資料庫寫入&lt;br&gt;學號 (str)、信箱 (mail)、&lt;br&gt;性別 (int)、密碼 (str)、驗證碼 (str)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="544" y="204" width="200" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--6" value="驗證碼 (str)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="884" y="256.5" width="120" height="26.25" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--7" value="學號 (str)、驗證碼 (str)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="219" y="314" width="125" height="26.25" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--8" value="資料庫查詢&lt;br&gt;學號、驗證碼&lt;br&gt;是否存在" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="574" y="340.25" width="120" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--10" value="" style="curved=1;endArrow=none;html=1;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="804" y="504" as="sourcePoint" />
+            <mxPoint x="804" y="434" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="854" y="484" />
+              <mxPoint x="864" y="434" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--11" value="資料比對存在&lt;br&gt;資料庫寫入&lt;br&gt;已認證 (bool)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="884" y="424" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--12" value="回傳狀態 : 成功 (bool)&lt;br&gt;學號 (str)、性別 (int)、IP (str)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="454" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--13" value="回傳狀態 : 失敗 (bool)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="584" width="140" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--14" value="" style="curved=1;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="804" y="434" as="sourcePoint" />
+            <mxPoint x="804" y="614" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="884" y="544" />
+              <mxPoint x="864" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--15" value="資料比對不存在&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="884" y="570" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--16" value="頁面跳轉 : 首頁 (int)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="460.88" width="120" height="26.25" as="geometry" />
+        </mxCell>
+        <mxCell id="bo3QOvbhh4VpvO5wiQN--17" value="頁面跳轉 : 登入頁 (int)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="570" width="130" height="26.25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

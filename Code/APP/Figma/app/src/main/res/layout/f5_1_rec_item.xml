@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/edittext_style5">
+
+    <ImageView
+        android:id="@+id/QuestionListImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/questionnaire_icon_1" />
+
+    <TextView
+        android:id="@+id/QuestionListNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="台科專題問卷"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:maxWidth="200dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout1"
+        app:layout_constraintStart_toEndOf="@+id/QuestionListImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="196dp"
+        android:layout_height="53dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/QuestionListNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionListNameTextView">
+
+        <TextView
+            android:id="@+id/QuestionListTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#2分鐘"
+            android:textColor="#0000FF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/QuestionListLimitTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#限男"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/f521surveypeoplelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="#抽獎"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/QuestionListNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/QuestionListNameTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

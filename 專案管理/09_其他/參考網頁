@@ -1,0 +1,18 @@
+參考網頁
+CICD
+https://ithelp.ithome.com.tw/articles/10219083
+
+Docker
+
+jenkins
+https://www.youtube.com/watch?v=e0jCdsw1QGY
+
+Docker github jenkins 整合
+https://www.itread01.com/content/1520879906.html
+
+github push to jenkins
+https://zoejoyuliao.medium.com/%E9%80%8F%E9%81%8E-github-webhook-%E8%A7%B8%E7%99%BC%E6%9C%AC%E5%9C%B0-jenkins-pipeline-%E8%AE%93%E4%BD%A0-push-code-%E5%88%B0-github-%E5%B0%B1%E6%9C%83%E8%87%AA%E5%8B%95%E8%B7%91-ci-cd-7c4bd7a22446
+
+其他
+[安裝 用docker 裝jenkins]
+https://zoejoyuliao.medium.com/%E7%94%A8-docker-%E5%AE%89%E8%A3%9D-ci-%E5%B7%A5%E5%85%B7-jenkins-347ffe630e40

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="411dp"
+        android:layout_height="101dp"
+        android:background="@color/white"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/f4211pagetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="資管宿營"
+            android:textColor="@color/teal_200"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/OtherPersonalTag3TextView"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/f4211tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#系務"
+                android:textColor="#662BE2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/f521surveypeoplelimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#男"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/OtherPersonalTag3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="台科資管系學會"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="下架原因："
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/CancelReasonEditText"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+
+    <EditText
+        android:id="@+id/CancelReasonEditText"
+        android:layout_width="327dp"
+        android:layout_height="443dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_style6"
+        android:gravity="left"
+        android:hint="必填"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/CancelDeleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/CancelDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:background="@drawable/button_style4"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="取消送出"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ConfirmCancelButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ConfirmCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style4"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認送出"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CancelDeleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CancelDeleteButton"
+        app:layout_constraintTop_toTopOf="@+id/CancelDeleteButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

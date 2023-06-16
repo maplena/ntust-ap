@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ScoreEventNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="資管宿營"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/ScoreEventCreatorTextView"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/ScoreEventTag1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#系務"
+                android:textColor="#662BE2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ScoreEventTag2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#男"
+                android:textColor="#FF0000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ScoreEventCreatorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="台科資管系學會"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="活動回饋："
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <EditText
+        android:id="@+id/ScoreContent"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_style3"
+        android:gravity="left"
+        android:hint="必填"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <Button
+        android:id="@+id/CancelSendScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="取消送出"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/ConfirmSendScoreButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreContent" />
+
+    <Button
+        android:id="@+id/ConfirmSendScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認送出"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CancelSendScoreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CancelSendScoreButton"
+        app:layout_constraintTop_toTopOf="@+id/CancelSendScoreButton" />
+
+    <ImageButton
+        android:id="@+id/ScoreFirstStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/ScoreSecondStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/ScoreFirstStar"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/ScoreThirdStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/ScoreSecondStar"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/ScoreFourthStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/ScoreThirdStar"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <ImageButton
+        android:id="@+id/ScoreFifthStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/ScoreFourthStar"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="活動評分："
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/ScoreFirstStar"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

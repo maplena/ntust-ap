@@ -1,0 +1,13 @@
+
+Code/MariaDB.session.sql
+Code/.vscode/settings.json
+Code/Server/ntust_ap_server/src/main/resources/application.yml
+Code/Server/ntust_ap_server/pom.xml
+Code/Server/ntust_ap_server/src/main/resources/application.yml
+*.lock
+*.yml
+Code/APP/Figma/.idea/misc.xml
+Code/APP/Figma/app/src/main/java/com/example/figma/api/RetrofitClient.java
+Code/APP/Figma/app/build.gradle
+Code/APP/Figma/build.gradle
+*.gradle

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/constraintlayout_style1">
+
+    <TextView
+        android:id="@+id/UnStartEventNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="台痾貓貓募資救援"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/UnStartEventCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:paddingVertical="5dp"
+        android:text="取消報名"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/UnStartEventDateTextView"
+        app:layout_constraintEnd_toEndOf="@+id/UnStartEventTag1TextView"
+        app:layout_constraintTop_toTopOf="@+id/UnStartEventDateTextView" />
+    <TextView
+        android:id="@+id/UnStartEventCreatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="台科根與芽"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UnStartEventDateTextView"
+        app:layout_constraintStart_toStartOf="@+id/UnStartEventNameTextView" />
+
+
+    <TextView
+        android:id="@+id/UnStartEventDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="舉辦日期：8/7"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/UnStartEventCancelButton"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/UnStartEventTag1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#台科"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/UnStartEventTag2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#吸貓"
+        android:textColor="#662BE2"
+        android:textSize="12sp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintTop_toTopOf="@id/UnStartEventTag1TextView"
+        app:layout_constraintBottom_toBottomOf="@id/UnStartEventTag1TextView"
+        app:layout_constraintEnd_toStartOf="@+id/UnStartEventTag1TextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

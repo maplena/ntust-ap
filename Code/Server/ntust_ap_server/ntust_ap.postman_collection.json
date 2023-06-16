@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "b8cc2573-b974-4a74-911a-a88ddce545ba",
+		"name": "ntust_ap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "交友相關",
+			"item": [
+				{
+					"name": "寄送好友邀請",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"1@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"studentid\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/friend/send_firend_apply"
+					},
+					"response": []
+				},
+				{
+					"name": "取得好友邀請列表",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boyan0814@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/friend/get_firend_apply"
+					},
+					"response": []
+				},
+				{
+					"name": "取得好友列",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boyan0814@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/friend/get_firendlist"
+					},
+					"response": []
+				},
+				{
+					"name": "刪除好友",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boyan0814@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"target_id\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/friend/del_firend"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "圖片相關",
+			"item": [
+				{
+					"name": "上傳圖片",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/boyan/Downloads/oOCxfW6.jpg"
+								}
+							]
+						},
+						"url": "localhost:8080/api/v1/image/upload"
+					},
+					"response": []
+				},
+				{
+					"name": "下載圖片",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fileName",
+									"value": "oOCxfW6.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8080/api/v1/image/download"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "註冊相關",
+			"item": [
+				{
+					"name": "註冊",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_id\":\"3\",\r\n    \"email\":\"boyan0814@gmail.com\",\r\n    \"name\":\"OuO\",\r\n    \"gender\":\"true\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/registration"
+					},
+					"response": []
+				},
+				{
+					"name": "重設密碼 ( 系統生成 )",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boyan0814@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/resetPassword"
+					},
+					"response": []
+				},
+				{
+					"name": "登入",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "使用者資料相關",
+			"item": [
+				{
+					"name": "取得私人資料",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"boyan0814@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/edit_user/get_user_private"
+					},
+					"response": []
+				},
+				{
+					"name": "取得公開資訊",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "boyan0814@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8080/api/v1/edit_user/get_user_public"
+					},
+					"response": []
+				},
+				{
+					"name": "個資更新",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_id\":\"2\",\r\n    \"email\":\"leotsai5757@gmail.com\",\r\n    \"name\":\"www\",\r\n    \"gender\":\"true\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/edit_user/update_user_data"
+					},
+					"response": []
+				},
+				{
+					"name": "個人照片地址更新",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"leotsai5757@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"image_path\":\"oOCxfW6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/edit_user/update_user_image_path"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "活動相關",
+			"item": [
+				{
+					"name": "建立活動",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"CWT52\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntnu\",\r\n    \"place\":\"師大分部\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"ア二メ\",\r\n    \"categoryRole\":\"public\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"type\":\"校辦\",\r\n    \"price\":300,\r\n    \"meal\":0,\r\n    \"start_date\":\"03-12-2021 12:00:00\",\r\n    \"end_date\":\"04-12-2021 12:00:00\",\r\n    \"status\":\"End\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/add"
+					},
+					"response": []
+				},
+				{
+					"name": "更新活動",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"title\":\"CWT52\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntnu\",\r\n    \"place\":\"師大分部\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"animeshow\",\r\n    \"categoryRole\":\"private\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"type\":\"校辦\",\r\n    \"price\":300,\r\n    \"meal\":0,\r\n    \"start_date\":\"03-12-2021 12:00:00\",\r\n    \"end_date\":\"04-12-2021 12:00:00\",\r\n    \"status\":\"End\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/update/admin"
+					},
+					"response": []
+				},
+				{
+					"name": "取得活動 (Order by promoter)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"title\":\"test_activity\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntu\",\r\n    \"place\":\"台大體育館\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"FF16\",\r\n    \"categoryRole\":\"public\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"price\":300,\r\n    \"meal\":0,\r\n    \"start_date\":\"01-12-2021 12:00:00\",\r\n    \"end_date\":\"02-12-2021 12:00:00\",\r\n    \"status\":\"running\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/get/promoter=admin&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "取得活動 (Order by tag)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/activity/get/tag=anime&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "取得活動 (Order by type)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/activity/get/type=校辦&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "參加活動",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"activityId\":12,\r\n    \"userId\":\"b10809033\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/joinactivity"
+					},
+					"response": []
+				},
+				{
+					"name": "離開活動",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activityId\":30,\r\n    \"userId\":\"b10809033\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/leaveactivity"
+					},
+					"response": []
+				},
+				{
+					"name": "取得活動參與者名單 (by activity id)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/activity/getparticipent/25/0"
+					},
+					"response": []
+				},
+				{
+					"name": "取得自己參加的活動",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/getmyactivities/b10809033/0"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "問卷相關",
+			"item": [
+				{
+					"name": "建立問卷",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"CWT52\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntnu\",\r\n    \"prize\":\"蛋糕一個\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"填個問卷吧\",\r\n    \"categoryRole\":\"public\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"type\":\"校辦\",\r\n    \"start_date\":\"03-12-2021 12:00:00\",\r\n    \"end_date\":\"04-12-2021 12:00:00\",\r\n    \"status\":\"Run\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/survey/add"
+					},
+					"response": []
+				},
+				{
+					"name": "更新問卷",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"title\":\"CWT52\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntnu\",\r\n    \"prize\":\"蛋糕一個\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"填個問卷吧\",\r\n    \"categoryRole\":\"public\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"type\":\"校辦\",\r\n    \"start_date\":\"03-12-2021 12:00:00\",\r\n    \"end_date\":\"04-12-2021 12:00:00\",\r\n    \"status\":\"Run\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/update/admin"
+					},
+					"response": []
+				},
+				{
+					"name": "取得問卷 (Order by promoter)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"title\":\"test_activity\",\r\n    \"promoter\":\"admin\",\r\n    \"school\":\"ntu\",\r\n    \"place\":\"台大體育館\",\r\n    \"tag\":\"Anime\",\r\n    \"details\":\"FF16\",\r\n    \"categoryRole\":\"public\",\r\n    \"gender\":0,\r\n    \"phone_number\":\"0912345678\",\r\n    \"people_num_limit\":1000,\r\n    \"price\":300,\r\n    \"meal\":0,\r\n    \"start_date\":\"01-12-2021 12:00:00\",\r\n    \"end_date\":\"02-12-2021 12:00:00\",\r\n    \"status\":\"running\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/activity/get/promoter=admin&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "取得問卷 (Order by tag)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/activity/get/tag=anime&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "取得問卷 (Order by type)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/survey/get/type=校辦&status=running/0"
+					},
+					"response": []
+				},
+				{
+					"name": "參加問卷",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"surveyId\":1,\r\n    \"userId\":\"b10809033\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/survey/joinactivity"
+					},
+					"response": []
+				},
+				{
+					"name": "取得問卷參與者名單 (by survey id)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/survey/getparticipent/25/0"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

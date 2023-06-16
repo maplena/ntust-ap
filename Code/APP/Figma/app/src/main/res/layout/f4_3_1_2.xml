@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/EndPostScoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="資管宿營"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintStart_toStartOf="@+id/EndPostScoreName"
+            app:layout_constraintTop_toBottomOf="@id/EndPostScoreName">
+
+            <TextView
+                android:id="@+id/EndPostScoreTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#系務"
+                android:textColor="#662BE2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/EndPostScoreSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#男"
+                android:textColor="#FF0000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/EndPostScoreHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="台科資管系學會"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/EndPostScoreName"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活動分數:  "
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/RateFirstStar"
+            app:layout_constraintEnd_toStartOf="@+id/RateFirstStar"
+            app:layout_constraintTop_toTopOf="@+id/RateFirstStar" />
+
+        <ImageView
+            android:id="@+id/RateFirstStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A4EC83"
+            android:foreground="@drawable/new_star_fill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/RateSecondStar"
+            app:srcCompat="@drawable/bi_star_fill__1_" />
+
+        <ImageView
+            android:id="@+id/RateSecondStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A4EC83"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/RateThirdStar" />
+
+        <ImageView
+            android:id="@+id/RateThirdStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A4EC83"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/RateFourthStar" />
+
+        <ImageView
+            android:id="@+id/RateFourthStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A4EC83"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/RateFifthStar" />
+
+        <ImageView
+            android:id="@+id/RateFifthStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A4EC83"
+            android:foreground="@drawable/new_star_half"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/star_unfilled" />
+
+        <TextView
+            android:id="@+id/EndPostScorePeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="參加人數:50人"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="@+id/RateFifthStar" />
+
+        <TextView
+            android:id="@+id/EndPostScoreTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="時間:10/29"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/EndPostScorePeople"
+            app:layout_constraintEnd_toEndOf="@+id/RateFifthStar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="學員回饋"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/EndPostScoreRecycleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/EndPostScoreCloseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <Button
+        android:id="@+id/EndPostScoreCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="關閉"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EndPostScoreRecycleView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

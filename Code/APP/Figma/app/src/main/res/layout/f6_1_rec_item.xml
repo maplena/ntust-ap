@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/constraintlayout_style1"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/LotteryListImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <TextView
+        android:id="@+id/LotteryListNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="嚴茶第二杯折五元"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/LotteryListUseTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/LotteryListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/LotteryListImageView" />
+
+    <TextView
+        android:id="@+id/LotteryListUseTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用期限：9/10"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/LotteryListProbabilityView"
+        app:layout_constraintStart_toStartOf="@+id/LotteryListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/LotteryListNameTextView" />
+
+    <TextView
+        android:id="@+id/LotteryListProbabilityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="機率：30%"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LotteryListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/LotteryListUseTimeTextView" />
+
+    <Button
+        android:id="@+id/LotteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:minHeight="0dp"
+        android:text="(抽獎)"
+        android:textColor="#7272f1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LotteryListProbabilityView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LotteryListProbabilityView" />
+
+    <TextView
+        android:id="@+id/LotteryListCoolDownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冷卻時間：10：20"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/LotteryListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/LotteryListUseTimeTextView" />
+
+    <TextView
+        android:id="@+id/LotteryListNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩餘張數：81"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LotteryListUseTimeTextView"
+        app:layout_constraintEnd_toEndOf="@+id/LotteryListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/LotteryListNameTextView" />
+
+    <Button
+        android:id="@+id/LotteryRuleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:minHeight="0dp"
+        android:text="(詳細規範)"
+        android:textColor="#7272f1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LotteryListNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/LotteryListNumTextView"
+        app:layout_constraintTop_toTopOf="@+id/LotteryListNameTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

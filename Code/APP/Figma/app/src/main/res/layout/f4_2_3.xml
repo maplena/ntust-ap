@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/PostBackButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/go_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="活動發布"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PostBackButton"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/f4211tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="活動名稱："
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ActivityName"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout8" />
+
+    <EditText
+        android:id="@+id/ActivityName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edittext_style10"
+        android:hint="活動名稱"
+        android:padding="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/f4211tag1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/f4211tag1"
+        app:layout_constraintWidth_percent="0.59" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/linearlayout_style4"
+        app:layout_constraintBottom_toTopOf="@+id/AcceptModifyActivityDataButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ActivityName">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.3" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="主辦："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ActivityCreator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style7"
+                    android:editable="false"
+                    android:hint="綁定自動輸入"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+
+                <TextView
+                    android:id="@+id/surveyDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="社團："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityPersonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style10"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/black"
+                    android:textOff="個人"
+                    android:textOn="個人"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/surveyDescription"
+                    app:layout_constraintStart_toEndOf="@+id/surveyDescription"
+                    app:layout_constraintTop_toTopOf="@+id/surveyDescription" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityClubButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_style9"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#808080"
+                    android:textOff="社團"
+                    android:textOn="社團"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/surveyDescription"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityPersonalButton"
+                    app:layout_constraintTop_toTopOf="@+id/surveyDescription" />
+
+
+                <TextView
+                    android:id="@+id/OtherPersonalTag3TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="校別："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/surveyDescription" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityNTUSTButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style10"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/black"
+                    android:textOff="台科"
+                    android:textOn="台科"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/OtherPersonalTag3TextView"
+                    app:layout_constraintStart_toEndOf="@+id/OtherPersonalTag3TextView"
+                    app:layout_constraintTop_toTopOf="@+id/OtherPersonalTag3TextView" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityNTNUButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_style9"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#808080"
+                    android:textOff="台師"
+                    android:textOn="台師"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/OtherPersonalTag3TextView"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityNTUSTButton"
+                    app:layout_constraintTop_toTopOf="@+id/OtherPersonalTag3TextView" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityNTUButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_style9"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#808080"
+                    android:textOff="台大"
+                    android:textOn="台大"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/OtherPersonalTag3TextView"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityNTNUButton"
+                    app:layout_constraintTop_toTopOf="@+id/OtherPersonalTag3TextView" />
+
+                <TextView
+                    android:id="@+id/f521surveypeoplelimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="性別："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/OtherPersonalTag3TextView" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityBoyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style10"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/black"
+                    android:textOff="男"
+                    android:textOn="男"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/f521surveypeoplelimit"
+                    app:layout_constraintStart_toEndOf="@+id/f521surveypeoplelimit"
+                    app:layout_constraintTop_toTopOf="@+id/f521surveypeoplelimit" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityGirlButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_style9"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#808080"
+                    android:textOff="女"
+                    android:textOn="女"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/f521surveypeoplelimit"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityBoyButton"
+                    app:layout_constraintTop_toTopOf="@+id/f521surveypeoplelimit" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="年級："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/f521surveypeoplelimit" />
+
+                <EditText
+                    android:id="@+id/ActivityGrade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:editable="false"
+                    android:hint="自動填入"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="電話："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityPhone"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityPhone" />
+
+                <EditText
+                    android:id="@+id/ActivityPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_style7"
+                    android:hint="xxxx-xxx-xxx"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ActivityGrade"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityGrade" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限制人數："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityLimit"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityLimit" />
+
+                <EditText
+                    android:id="@+id/ActivityLimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:hint="人數"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityPhone" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="報名截止："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityRegistrationDeadline"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityRegistrationDeadline" />
+
+                <EditText
+                    android:id="@+id/ActivityRegistrationDeadline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:editable="false"
+                    android:hint="選擇截止日期"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityLimit" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活動地點："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityPosition"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityPosition" />
+
+                <EditText
+                    android:id="@+id/ActivityPosition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:hint="台科 MA303"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityRegistrationDeadline" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活動日期："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityStartDate"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityStartDate" />
+
+                <EditText
+                    android:id="@+id/ActivityStartDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="選擇開始時間"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityPosition" />
+
+                <EditText
+                    android:id="@+id/ActivityEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_style7"
+                    android:editable="false"
+                    android:hint="選擇結束時間"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ActivityStartDate"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityStartDate" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自訂TAG："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityTag"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityTag" />
+
+                <EditText
+                    android:id="@+id/ActivityTag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_style7"
+                    android:hint="xx-xx-xx"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/ActivityEndDate" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="圖片上傳："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+                <Button
+                    android:id="@+id/ActivityPictureUploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style10"
+                    android:hint="點此上傳"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/orange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView14"
+                    app:layout_constraintWidth_percent="0.7" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="價格："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <EditText
+                    android:id="@+id/ActivityPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/edittext_style7"
+                    android:hint="0"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toStartOf="@+id/middle"
+                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    android:text="餐點："
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/middle"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityMeatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style10"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/black"
+                    android:textOff="葷"
+                    android:textOn="葷"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <ToggleButton
+                    android:id="@+id/ActivityVegetarianButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_style9"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#808080"
+                    android:textOff="素"
+                    android:textOn="素"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityMeatButton"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/ActivityDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_style3"
+                    android:gravity="left"
+                    android:hint="附件資訊(詳細資料)"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView17"
+                    app:layout_constraintWidth_percent="0.7" />
+
+                <ImageView
+                    android:id="@+id/UploadImagePreview"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ActivityPictureUploadButton"
+                    app:layout_constraintEnd_toStartOf="@+id/end"
+                    app:layout_constraintStart_toEndOf="@+id/ActivityPictureUploadButton"
+                    app:layout_constraintTop_toTopOf="@+id/ActivityPictureUploadButton"
+                    app:srcCompat="@drawable/button_style11" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AcceptModifyActivityDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認發布"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <Button
+        android:id="@+id/ModifyActivityDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="修改資料"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/AcceptModifyActivityDataButton"
+        app:layout_constraintEnd_toStartOf="@id/AcceptPostButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/AcceptModifyActivityDataButton" />
+
+    <Button
+        android:id="@+id/AcceptPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認送出"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/AcceptModifyActivityDataButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ModifyActivityDataButton"
+        app:layout_constraintTop_toTopOf="@id/AcceptModifyActivityDataButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

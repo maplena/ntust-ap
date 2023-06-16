@@ -1,0 +1,340 @@
+<mxfile host="app.diagrams.net" modified="2021-09-27T07:25:50.819Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="VteYJe72s7hVdwHEwhVx" version="15.3.4" type="github">
+  <diagram id="sUuNq-F8e-8yVib5LklR" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eY0Ow7e258zjDy8_juu0-1" value="用戶" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-2" value="程式" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="40" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-3" value="伺服器" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="40" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-4" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="110" as="sourcePoint" />
+            <mxPoint x="90" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-5" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="90" as="sourcePoint" />
+            <mxPoint x="320" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-6" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="594.5" y="90" as="sourcePoint" />
+            <mxPoint x="595" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-7" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="140" as="sourcePoint" />
+            <mxPoint x="320" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-8" value="開啟活動頁面" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="160" as="sourcePoint" />
+            <mxPoint x="590" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-10" value="請求所有活動列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-11" value="" style="endArrow=none;endFill=0;endSize=12;html=1;fontSize=16;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="190" as="sourcePoint" />
+            <mxPoint x="590" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-12" value="回傳所有活動列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-13" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="210" as="sourcePoint" />
+            <mxPoint x="320" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-14" value="顯示所有活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-15" value="可進行" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="10" y="220" width="760" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-16" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="260" as="sourcePoint" />
+            <mxPoint x="320" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-17" value="點擊任一活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-18" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="280" as="sourcePoint" />
+            <mxPoint x="590" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-19" value="請求該活動內容" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-20" value="" style="endArrow=none;endFill=0;endSize=12;html=1;fontSize=16;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="320" as="sourcePoint" />
+            <mxPoint x="590" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-21" value="回傳該活動內容" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-22" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="350" as="sourcePoint" />
+            <mxPoint x="320" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-23" value="新視窗顯示該活動內容" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-24" value="可進行" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="30" y="360" width="720" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="410" as="sourcePoint" />
+            <mxPoint x="320" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-26" value="點擊人員列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="430" as="sourcePoint" />
+            <mxPoint x="590" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-28" value="請求參加該活動的人員列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="390" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-29" value="" style="endArrow=none;endFill=0;endSize=12;html=1;fontSize=16;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="470" as="sourcePoint" />
+            <mxPoint x="590" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-30" value="回傳參加該活動的人員列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="430" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-31" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="500" as="sourcePoint" />
+            <mxPoint x="320" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-32" value="新視窗顯示參加該活動&lt;br&gt;的人員列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="30" y="530" width="720" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-34" value="Alt" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="50" y="550" width="680" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-35" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="610" as="sourcePoint" />
+            <mxPoint x="320" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-36" value="點擊完成報名按鈕" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="570" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-37" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="640" as="sourcePoint" />
+            <mxPoint x="590" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-38" value="將使用者加入活動中" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-39" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="670" as="sourcePoint" />
+            <mxPoint x="320" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-40" value="顯示報名成功" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="630" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="50" y="700" width="680" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-42" value="使用者未報名&lt;br&gt;此活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="610" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-43" value="使用者已報名&lt;br&gt;此活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="610" y="770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-44" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="748" as="sourcePoint" />
+            <mxPoint x="320" y="748" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-45" value="點擊取消報名按鈕" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="708" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-46" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="788" as="sourcePoint" />
+            <mxPoint x="320" y="788" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-47" value="輸入取消原因並按下&lt;br&gt;確認取消" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="140" y="748" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-48" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="828" as="sourcePoint" />
+            <mxPoint x="590" y="828" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-49" value="將使用者從活動中刪除" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="788" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-50" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="868" as="sourcePoint" />
+            <mxPoint x="590" y="868" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-51" value="將取消原因發送給主辦者" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="828" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-52" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="900" as="sourcePoint" />
+            <mxPoint x="320" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-53" value="顯示取消報名成功" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="860" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="10" y="1020" width="760" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-56" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="85" y="1079.5" as="sourcePoint" />
+            <mxPoint x="315" y="1079.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-57" value="點擊已報名活動分類" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="135" y="1040" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-60" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="1100" as="sourcePoint" />
+            <mxPoint x="590" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-61" value="請求該使用者已報名的活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="1060" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-62" value="" style="endArrow=none;endFill=0;endSize=12;html=1;fontSize=16;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="1140" as="sourcePoint" />
+            <mxPoint x="590" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-63" value="回傳該使用者已報名的活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="1100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-64" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="1170" as="sourcePoint" />
+            <mxPoint x="320" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-65" value="顯示已報名活動列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-68" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="95" y="1229.5" as="sourcePoint" />
+            <mxPoint x="325" y="1229.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-69" value="點擊已結束活動小分類" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="145" y="1190" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-70" value="" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=16;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="1260" as="sourcePoint" />
+            <mxPoint x="590" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-71" value="請求該使用者參與的已結束活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="400" y="1220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-72" value="" style="endArrow=none;endFill=0;endSize=12;html=1;fontSize=16;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="1300" as="sourcePoint" />
+            <mxPoint x="590" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-73" value="回傳該使用者參與的已結束活動" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="400" y="1260" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-74" value="" style="endArrow=none;endFill=0;endSize=12;html=1;startArrow=open;startFill=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="1340" as="sourcePoint" />
+            <mxPoint x="320" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-75" value="顯示已結束活動列表" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eY0Ow7e258zjDy8_juu0-76" value="點擊已報名活動分類裡&lt;br&gt;的活動的動作和&lt;br&gt;上面點擊任一活動後&lt;br&gt;的動作一樣" style="text;strokeColor=none;fillColor=none;html=1;fontSize=16;fontStyle=0;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="630" y="1090" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-1" value="活動名稱&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、開始日期&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、人數&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、主辦單位&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="100" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-2" value="活動圖片&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、&lt;/span&gt;&lt;br&gt;活動名稱&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、開始日期&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、人數&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、主辦單位&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、開始地點&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%E6%B4%BB%E5%8B%95%E5%90%8D%E7%A8%B1%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(77%20%2C%2081%20%2C%2086)%20%3B%20font-family%3A%20%26amp%3B%2334%3Barial%26amp%3B%2334%3B%20%2C%20sans-serif%20%3B%20text-align%3A%20left%20%3B%20background-color%3A%20rgb(255%20%2C%20255%20%2C%20255)%26quot%3B%26gt%3B%E3%80%81%E6%A8%99%E7%B1%A4%26lt%3B%2Fspan%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(77%20%2C%2081%20%2C%2086)%20%3B%20font-family%3A%20%26amp%3B%2334%3Barial%26amp%3B%2334%3B%20%2C%20sans-serif%20%3B%20text-align%3A%20left%20%3B%20background-color%3A%20rgb(255%20%2C%20255%20%2C%20255)%26quot%3B%26gt%3B%E3%80%81%E9%96%8B%E5%A7%8B%E6%97%A5%E6%9C%9F%26lt%3B%2Fspan%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(77%20%2C%2081%20%2C%2086)%20%3B%20font-family%3A%20%26amp%3B%2334%3Barial%26amp%3B%2334%3B%20%2C%20sans-serif%20%3B%20text-align%3A%20left%20%3B%20background-color%3A%20rgb(255%20%2C%20255%20%2C%20255)%26quot%3B%26gt%3B%E3%80%81%E4%BA%BA%E6%95%B8%26lt%3B%2Fspan%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(77%20%2C%2081%20%2C%2086)%20%3B%20font-family%3A%20%26amp%3B%2334%3Barial%26amp%3B%2334%3B%20%2C%20sans-serif%20%3B%20text-align%3A%20left%20%3B%20background-color%3A%20rgb(255%20%2C%20255%20%2C%20255)%26quot%3B%26gt%3B%E3%80%81%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22350%22%20y%3D%22100%22%20width%3D%22180%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="595" y="220" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-3" value="&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;學號、名稱&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="355" y="370" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-4" value="&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;資料庫新增&lt;br&gt;學號、名稱&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="570" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-6" value="&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;資料庫刪除&lt;br&gt;學號、名稱&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="355" y="757" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-8" value="&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;學號、名稱&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、取消原因&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="355" y="880" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-9" value="活動名稱&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、開始日期&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;主辦單位&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="1040" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XMOmDnZHRC4OANVke3VL-11" value="活動名稱&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、標籤&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: rgb(77 , 81 , 86) ; font-family: &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;主辦單位&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1190" width="180" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

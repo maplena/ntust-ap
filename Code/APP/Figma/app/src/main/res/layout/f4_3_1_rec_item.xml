@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/constraintlayout_style1">
+
+    <TextView
+        android:id="@+id/EndPostEventNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingHorizontal="8dp"
+        android:text="資管宿營"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/EndPostEventNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/EndPostEventNameTextView">
+
+        <TextView
+            android:id="@+id/EndPostEventTag1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#系務"
+            android:textColor="#662BE2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/EndPostEventTag2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#男"
+            android:textColor="#FF0000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/EndPostEventCreatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="台科資管系學會"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+
+    <Button
+        android:id="@+id/EndPostEventDetailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_style9"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:text="參加列表"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/EndPostEventFeedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style9"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:text="活動回饋"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EndPostEventDetailButton"
+        app:layout_constraintTop_toBottomOf="@+id/EndPostEventDetailButton"
+        app:layout_constraintVertical_bias="0.333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

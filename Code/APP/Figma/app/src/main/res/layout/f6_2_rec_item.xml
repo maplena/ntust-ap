@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/constraintlayout_style1">
+
+    <TextView
+        android:id="@+id/ExchangeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="嚴茶第二杯折五元"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/ExchangeUseTimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ExchangeUseTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用期限：9/10"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ExchangeNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ExchangeNameTextView" />
+
+
+    <Button
+        android:id="@+id/ExchangeRuleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:minHeight="0dp"
+        android:text="(詳細規範)"
+        android:textColor="#7272f1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ExchangeNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ExchangeNameTextView" />
+
+    <Button
+        android:id="@+id/ExchangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style12"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="5dp"
+
+        android:text="兌換"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ExchangeUseTimeTextView"
+        app:layout_constraintEnd_toEndOf="@+id/ExchangeRuleButton"
+        app:layout_constraintTop_toTopOf="@+id/ExchangeUseTimeTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/KickApplicantTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認要XXX嘛?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ConfirmKickApplicantButton"/>
+
+    <Button
+        android:id="@+id/ConfirmKickApplicantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認刪除"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/CancelKickApplicantButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KickApplicantTextView" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="確認"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CancelKickApplicantButton"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KickApplicantTextView"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/CancelKickApplicantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style6"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="取消"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ConfirmKickApplicantButton"
+        app:layout_constraintTop_toBottomOf="@+id/KickApplicantTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
